@@ -1,5 +1,6 @@
 # saut
 Search As You Type
+
 A small Django project with fuzzy search / autocomplete search implementation such that:
   1. Substring match can occur anywhere in the strings
   2. a) Matches found closer to the beginning are ranked higher
