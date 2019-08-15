@@ -1,4 +1,3 @@
-# saut
 Search As You Type
 
 A small Django project with fuzzy search / autocomplete search implementation such that:
