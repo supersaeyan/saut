@@ -1,11 +1,11 @@
 import operator
 import time
-
+from django.conf import settings
 from suffixtree import SuffixQueryTree
 
 
 def _read_dataset():
-    with open('/opt/word_search.tsv', 'r') as f:
+    with open(settings.DATASET_PATH, 'r') as f:
         words = {line.split()[0]: line.split()[1] for line in f.readlines() if len(line.split())}
 
     return words
