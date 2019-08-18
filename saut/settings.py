@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0', '[::1]', 'localhost']
 
+# CUSTOM
+DATASET_PATH = os.path.join(BASE_DIR, 'word_search.tsv')
 
 # Application definition
 
