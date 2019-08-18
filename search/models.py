@@ -94,23 +94,24 @@ def lookup(word):
     t1 = time.time()
     print('Matches in {}'.format(t1 - t0))
 
-    matches.sort(key=operator.itemgetter(2))
-    # Matches found in the beginning of words, ranked higher
-
-    t2 = time.time()
-    print('Sorted by index of substring in {}'.format(t2 - t1))
-
-    matches.sort(key=operator.itemgetter(1), reverse=True)
-    # Matches that are common, ranked higher
-
-    t3 = time.time()
-    print('Sorted by commonality of words in {}'.format(t3 - t2))
-
-    matches.sort(key=lambda t: len(t[0]))
-    # Matches that are shorter in length, ranked higher
-
-    t4 = time.time()
-    print('Sorted by length of the matches in {}'.format(t4 - t3))
+    matches.sort(key=custom_sort_key)
+    # matches.sort(key=operator.itemgetter(2))
+    # # Matches found in the beginning of words, ranked higher
+    #
+    # t2 = time.time()
+    # print('Sorted by index of substring in {}'.format(t2 - t1))
+    #
+    # matches.sort(key=operator.itemgetter(1), reverse=True)
+    # # Matches that are common, ranked higher
+    #
+    # t3 = time.time()
+    # print('Sorted by commonality of words in {}'.format(t3 - t2))
+    #
+    # matches.sort(key=lambda t: len(t[0]))
+    # # Matches that are shorter in length, ranked higher
+    #
+    # t4 = time.time()
+    # print('Sorted by length of the matches in {}'.format(t4 - t3))
 
     matches = [match[0] for match in matches[:25]]
 
