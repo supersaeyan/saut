@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'uoyhejj+hwfg0zssg+6t$3^a(v2^vy5!w)--8sp3jx74l859he'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['107.155.135.16']
+ALLOWED_HOSTS = ['107.155.135.16', 'localhost']
 
 # CUSTOM
 DATASET_PATH = os.path.join(BASE_DIR, 'word_search.tsv')
