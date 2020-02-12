@@ -1,7 +1,7 @@
 antlr4-python3-runtime==4.7.2
 automaton-tools==0.1.8
 csuffixtree==0.3.3
-Django==2.2.4
+Django==2.2.10
 gunicorn==19.9.0
 pytz==2019.2
 sqlparse==0.3.0
